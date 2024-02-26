@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="translator">
+      <div class="inputArea">
+        <textarea id="inputText" class="inputTextarea" placeholder="Enter text to translate..."></textarea>
+        <div class="controls">
+          <button class="copyButton" onclick="copyText('inputText')"><i class="fas fa-copy"></i></button>
+          <button class="speechButton" onclick="toSpeechText('inputText')"><i class="fas fa-volume-up"></i></button>
+          <button class="shareButton" onclick="shareText('inputText')"><i class="fas fa-share"></i></button>
+        </div>
+      </div>
+      <div class="outputArea">
+        <textarea id="outputText" class="outputTextarea" readonly=""></textarea>
+        <div class="controls">
+          <button class="copyButton" onclick="copyText('outputText')"><i class="fas fa-copy"></i></button>
+          <button class="speechButton" onclick="toSpeechText('outputText')"><i class="fas fa-volume-up"></i></button>
+          <button class="shareButton" onclick="shareText('outputText')"><i class="fas fa-share"></i></button>
+        </div>
+      </div>
+    </div>
+    <button class="translateButton" onclick="translateInput()"><i class="fas fa-language"></i> Translate</button>
+   
+  </div>
+  
+
+
+<script src="script.js"></script></body>
+</html>
